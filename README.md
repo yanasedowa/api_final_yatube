@@ -1,13 +1,36 @@
 # API для Yatube
 ### Описание
-**API** (от англ. **A**pplication **P**rogramming **I**nterface, «программный интерфейс приложения») — это интерфейс для обмена данными.
-**api_final_yatube** — это финальный проект Django REST framework, состоящий из приложений **Posts** и **API**. Приложение Posts включает модели для создания БД. Приложение API включает urlpatterns, views (ModelViewSet), serializers. Основной функционал API проекта api_final_yatube:
+
+**api_final_yatube** — это финальный проект Django REST framework, который позволяет управлять блогом Yatube посредством API. 
+
+
+### Основной функционал API проекта api_final_yatube:
 > -   использование JWT-токенов для аутенфикации пользователей;
 > -   получение, создание, обновление и удаление поста/постов с разрешением IsAuthenticatedOrReadOnly (получение списка постов, разделенных на страницы с помощью LimitOffsetPagination);
 > -   получение, создание, обновление и удаление комментария/комментариев к посту с разрешением IsAuthenticatedOrReadOnly;
 > -   просмотр группы/групп с разрешением IsAuthenticatedOrReadOnly;
 > -   чтобы подписаться на пользователя, получить список подписчиков и выполнить поиск по имени подписки с разрешением IsAuthenticated.
 ### Как запустить проект:
+На macOS или Linux запустите программу Терминал. 
+Если у вас Windows — запускайте [Git Bash](https://gitforwindows.org/)
+
+Установите интерпретатор Python 3.7
+
+Для Windows:
+www.python.org/downloads/#
+
+Для MacOS:
+
+```
+brew install python@3.7
+```
+
+Для Linux (Ubuntu):
+
+```
+sudo apt-get install python3.7
+```
+
 
   
 
@@ -25,7 +48,7 @@ git clone https://github.com/# **yandex-praktikum/api_final_yatube.git
 
 ```
 
-api_final_yatube
+cd api_final_yatube
 
 ```
 
